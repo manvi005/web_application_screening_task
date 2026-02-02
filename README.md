@@ -40,9 +40,9 @@ python -m venv venv
 # Windows:
 ..\venv\Scripts\activate
 # Linux/Mac:
-# source vevn/bin/activate
+# source venv/bin/activate
 
-pip install django djangorestframework pandas django-cors-headers reportlab
+pip install -r requirements.txt
 python manage.py migrate
 python manage.py createsuperuser # Create admin credentials
 ```
@@ -57,7 +57,7 @@ npm install
 ### 4. Desktop Frontend Setup
 ```bash
 cd desktop-frontend
-pip install PyQt5 requests matplotlib
+pip install -r requirements.txt
 ```
 
 ## ▶️ Running the Application
